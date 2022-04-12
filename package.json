@@ -1,0 +1,14 @@
+{
+  "name": "miniice-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "ice <miniice@iice.fun>",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.39"
+  }
+}
