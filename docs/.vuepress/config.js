@@ -1,3 +1,4 @@
+const path = require("path");
 const head = require("./config/head"); // 引入 head 配置
 const themeConfig = require("./config/themeConfig"); // 引入主题配置
 const plugins = require("./config/plugins"); // 引入插件配置
@@ -12,7 +13,8 @@ module.exports = {
   // locals:  // locales多语言支持的各个语言 locales 。
 
   // 主题配置
-  theme: '@vuepress/theme-default',
+  // theme: '@vuepress/theme-default',
+  theme: path.resolve(__dirname, './theme/index.js'),
   themeConfig, // 主题配置
 
   plugins, // 插件配置
