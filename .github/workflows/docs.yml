@@ -47,7 +47,7 @@ jobs:
       - name: Create File
         uses: finnp/create-file-action@1.0.0
         env:
-          FILE_NAME: "CNAME"
+          FILE_NAME: "docs/.vuepress/dist/CNAME"
           FILE_DATA: "iice.fun"
 
       # 查看 workflow 的文档来获取更多信息
