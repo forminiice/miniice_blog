@@ -43,6 +43,12 @@ jobs:
       - name: Build VuePress site
         run: yarn docs:build
 
+      # 创建 CNAME，这个是原始配置中没有的
+      - uses: "finnp/create-file-action@master"
+        env:
+          FILE_NAME: "./public/CNAME"
+          FILE_DATA: "iice.fun"
+
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
       - name: Deploy to GitHub Pages
