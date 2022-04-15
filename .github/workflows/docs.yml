@@ -44,7 +44,8 @@ jobs:
         run: yarn docs:build
 
       # 创建 CNAME，这个是原始配置中没有的
-      - uses: "finnp/create-file-action@master"
+      - name: Create File
+        uses: finnp/create-file-action@1.0.0
         env:
           FILE_NAME: "./public/CNAME"
           FILE_DATA: "iice.fun"
