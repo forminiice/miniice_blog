@@ -1,18 +1,15 @@
 <template>
   <div>
-    <h1>去找优总啦。。。</h1>
-    <Content />
+    <Layout />
   </div>
 </template>
 
 <script>
+import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
+
 export default {
-  mounted() {
-    window.location.href="http://124.221.56.58/"
-    window.history.replaceState()
+  components: {
+    Layout
   }
 }
 </script>
-
-<style>
-</style>
