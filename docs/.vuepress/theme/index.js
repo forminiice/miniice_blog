@@ -8,7 +8,8 @@ const fooTheme = (options, app) => {
     layouts: {
       Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
       404: path.resolve(__dirname, 'layouts/404.vue'),
-      HomePage: path.resolve(__dirname, 'layouts/HomePage.vue')
+      HomePage: path.resolve(__dirname, 'layouts/HomePage.vue'),
+      LinksPage: path.resolve(__dirname, 'layouts/linksPage.vue')
     },
     // ...
   }
