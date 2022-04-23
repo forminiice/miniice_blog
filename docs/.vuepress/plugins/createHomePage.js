@@ -6,7 +6,6 @@ const createHomePage = (options, app) => {
     name: 'vuepress-plugin-createHomePage',
     async onInitialized(app) {
       // if homepage doesn't exist
-      console.log(app.pages.every((page) => page.path !== '/'))
       if (app.pages.every((page) => page.path !== '/')) {
         // async create a homepage 
         const homepage = await createPage(app, {

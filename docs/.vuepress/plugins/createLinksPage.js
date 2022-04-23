@@ -5,8 +5,6 @@ const createLinksPage = (options, app) => {
   return {
     name: 'vuepress-plugin-createLinksPage',
     async onInitialized(app) {
-      console.log(app.pages.every((page) => page.path !== '/'))
-
       const linksPage = await createPage(app, {
         path: '/links',
         // set frontmatter

@@ -10,7 +10,8 @@ const fooTheme = (options, app) => {
       Layout: path.resolve(__dirname, 'layouts/Layout.vue'),
       404: path.resolve(__dirname, 'layouts/404.vue'),
       HomePage: path.resolve(__dirname, 'layouts/HomePage.vue'),
-      LinksPage: path.resolve(__dirname, 'layouts/LinksPage.vue')
+      LinksPage: path.resolve(__dirname, 'layouts/LinksPage.vue'),
+      AboutPage: path.resolve(__dirname, 'layouts/AboutPage.vue')
     },
     // ...
   }
