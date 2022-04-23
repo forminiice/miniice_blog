@@ -5,7 +5,7 @@ const plugins = require("./config/plugins"); // 引入插件配置
 
 module.exports = {
   // 站点配置
-  base: "https://iice.fun/", // 部署站点的基础路径
+  base: "/", // 部署站点的基础路径
   lang: 'zh-CN',
   title: 'ice',
   description: '小冰啦小冰',
