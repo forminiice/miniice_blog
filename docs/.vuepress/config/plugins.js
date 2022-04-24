@@ -1,5 +1,6 @@
 module.exports = [
-  [require('../plugins/createHomePage.js')],
-  [require('../plugins/createLinksPage.js')],
-  [require('../plugins/createAboutPage.js')],
+  [require('../plugins/createHomePagePlugin')],
+  [require('../plugins/createLinksPagePlugin')],
+  [require('../plugins/createAboutPagePlugin')],
+  [require('../plugins/createMusicPlugin')],
 ]

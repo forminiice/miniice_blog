@@ -1,0 +1,14 @@
+<template>
+  <meting-js
+    id="4859790136"
+    server="netease"
+    type="playlist"
+    fixed="true"
+    autoplay="true"
+    loop="all"
+    order="random"
+    preload="auto"
+    list-folded="ture"
+    list-max-height="500px"
+  ></meting-js>
+</template>
