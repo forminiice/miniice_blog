@@ -1,4 +1,4 @@
-const path = require("path");
+const { path } = require('@vuepress/utils')
 const head = require("./config/head"); // 引入 head 配置
 const themeConfig = require("./config/themeConfig"); // 引入主题配置
 const plugins = require("./config/plugins"); // 引入插件配置
@@ -22,6 +22,10 @@ module.exports = {
   // Markdown 配置
   markdown: {
     lineNumbers: true // 代码块显示行号
+  },
+
+  // 定义常量
+  define: {
   },
 
   // Dev配置项
