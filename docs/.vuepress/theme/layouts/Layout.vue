@@ -1,6 +1,7 @@
 <template>
   <div>
     <Layout />
+    <!-- <Content /> -->
   </div>
 </template>
 
