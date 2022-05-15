@@ -30,7 +30,14 @@
 </template>
 
 <script>
-
+import { useThemeData } from '@vuepress/plugin-theme-data/lib/client'
+import { useThemeLocaleData } from '@vuepress/plugin-theme-data/lib/client'
+export default {
+  setup() {
+    const themeData = useThemeLocaleData()
+    console.log(themeData.value.logo)
+  },
+}
 </script>
 <style lang="scss" scoped>
 .home {
@@ -49,21 +56,24 @@
   background-color: rgba(0, 0, 0, 0);
   background-blend-mode: multiply;
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(37, 104, 163, 0.2);
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   background-color: rgba(37, 104, 163, 0.2);
+  // }
 }
 
 .content {
   position: relative;
   width: 620px;
   z-index: 999;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
   // * {
   //   outline: 1px solid red;
   // }
