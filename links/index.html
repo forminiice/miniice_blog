@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.38">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <link rel="icon" href="/img/ico/favicon.ico"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script><title>ice</title><meta name="description" content="小冰啦小冰">
+    <link rel="modulepreload" href="/assets/app.6c77b787.js"><link rel="modulepreload" href="/assets/index.html.6be15e71.js"><link rel="modulepreload" href="/assets/index.html.8a391ffa.js">
+    <link rel="stylesheet" href="/assets/style.8c210c99.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div>links</div><!----><div><meting-js
+    id='4859790136'
+    server='netease'
+    type='playlist'
+    fixed='true'
+    autoplay='true'
+    loop='all'
+    order='random'
+    preload='auto'
+    list-folded='ture'
+    list-max-height='500px'
+  ></meting-js></div><!--]--></div>
+    <script type="module" src="/assets/app.6c77b787.js" defer></script>
+  </body>
+</html>
